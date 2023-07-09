@@ -1,14 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins:regular,500,600&display=swap);
 
-@font-face {
-    font-family: CalSans;
-    font-display: swap;
-    src: url("../fonts/CalSans-SemiBold.woff2") format("woff2"), url("../fonts/CalSans-SemiBold.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-
-*,
+/*
+**,
 *::before,
 *::after {
     margin: 0;
@@ -30,7 +22,7 @@ body {
 
 body {
     line-height: 1;
-    background: #F7F7F7;
+    
 
 }
 
@@ -42,45 +34,69 @@ li {
     list-style: none;
 }
 
-/* ---------------------------------------- */
-.wrapper {
-    overflow: hidden;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
 
-}
 
-/* ------------------------------------------- */
 
-.title {
-    font-family: CalSans;
-    color: #121212;
-    text-align: center;
-    font-size: 44px;
-    line-height: 1.2;
-}
-
-.title span {
-    color: #0e6922;
-    /*color: #cff2d0;*/
-}
 
 @media (max-width: 767.98px) {
     .title {
         font-size: 38px;
     }
+}*/
+
+/*-------------------------------*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.body{
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #0a0a0a;
+    
 }
 
-/* ---------------------------------------- */
-.page {
-    flex: 1 1 auto;
+.header{
+    background-color: #111111;
+    padding: 33px 0 33px;
+    color: #717171;
+    
 }
-
-/* ---------------------------------------- */
-[class*="__container"] {
-    max-width: 1230px;
+.container{
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0px 15px;
-
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    
+}
+.menu-item{
+    padding-right: 30px;
+}
+.menu-link{
+    font-size: 24px;
+    line-height: 24px;
+}
+.phone{
+    
+}
+.logo-img{
+    
 }
