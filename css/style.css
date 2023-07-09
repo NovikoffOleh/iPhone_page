@@ -72,7 +72,7 @@ ul{
     padding: 33px 0 33px;
     color: #717171;
     font-size: 24px;
-    line-height: 24px;
+    
     
 }
 .container{
@@ -134,7 +134,7 @@ ul{
 .new{
     padding: 90px 0 150px;
 }
-.new-title {
+.new-title, .color-title {
     text-transform: uppercase;
     margin: 0 0 50px;
     text-align: center;
@@ -158,6 +158,28 @@ ul{
 }
 .img-new{
     margin-left: 190px;
+}
+
+/*-----------------------------*/
+.color {
+    padding-bottom: 150px;
+}
+.color-list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.color-item img{
+    margin-bottom: 20px;
+}
+.color-item h3 {
+    margin:0 0 10px;
+    font-size: 20px;
+}
+.color-item p {
+    margin: 0;
+    
 }
 
 
