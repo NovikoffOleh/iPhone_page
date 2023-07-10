@@ -314,6 +314,12 @@ background-color: #0a0a0a;
         border: none;
         cursor: pointer;
         position: relative;
+        z-index: 50;
+    }
+    .logo,
+    .phone{
+        position: relative;
+        z-index: 50;
     }
     .btn-line{
        position: absolute;
@@ -321,6 +327,7 @@ background-color: #0a0a0a;
        width: 100%;
        background-color: #fff;
        height: 2px;
+       transition: .4s ease;
     }
     .btn-line:nth-child(1){
         top:0 ;
@@ -348,7 +355,28 @@ background-color: #0a0a0a;
     }
 
     .menu{
-        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #0a0a0a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+        transition: .4s ease;
+
+    }
+     
+    .menu-open .menu{
+        transform: translateY(0%);
+    }
+
+    .menu-item{
+        padding: 50px 0;
+        font-size: 56px;
     }
     .img-new{
         display: none;
@@ -409,6 +437,22 @@ background-color: #0a0a0a;
             padding: 50px 30px;
         }
 }
+
+@media (max-width:420px) {
+    .nav{
+        flex-wrap: wrap;
+    }
+    .phone{
+       flex-basis: auto;
+        margin-top: 50px;
+        order: 3;
+        width: 100%;
+    }
+    .menu-item{
+        font-size: 32px;
+    }
+}
+
 @media (max-width:375px) {
     .contacts-form {
             padding: 50px 10px;
