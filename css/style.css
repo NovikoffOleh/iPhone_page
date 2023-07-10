@@ -269,6 +269,9 @@ background-color: #0a0a0a;
 }
 
 /*----------адаптив-------------------*/
+.menu-btn{
+    display: none;
+}
 
 @media (max-width:1200px) {
     .headline-img{
@@ -302,6 +305,51 @@ background-color: #0a0a0a;
 }
 
 @media (max-width:940px) {
+    .menu-btn{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        order: 1;
+        border: none;
+        cursor: pointer;
+        position: relative;
+    }
+    .btn-line{
+       position: absolute;
+       left: 0;
+       width: 100%;
+       background-color: #fff;
+       height: 2px;
+    }
+    .btn-line:nth-child(1){
+        top:0 ;
+    }
+    .btn-line:nth-child(2) {
+        top: 20px;
+    }
+    .btn-line:nth-child(3) {
+        top: 20px;
+    }
+    .btn-line:nth-child(4) {
+        top: 40px;
+    }
+    .menu-open .btn-line:nth-child(1){
+       transform:scaleX(0)
+    }
+    .menu-open .btn-line:nth-child(2) {
+        transform: rotate(45deg)
+    }
+    .menu-open .btn-line:nth-child(3) {
+        transform: rotate(-45deg)
+    }
+    .menu-open .btn-line:nth-child(4) {
+        transform: scaleX(0)
+    }
+
+    .menu{
+        display: none;
+    }
     .img-new{
         display: none;
     }
@@ -309,6 +357,9 @@ background-color: #0a0a0a;
     .new-text b{
         min-width: 100%;
     }
+        .phone {
+            text-align: center;
+        }
 }
 @media (max-width:759px) {
     .headline,
